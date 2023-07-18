@@ -169,7 +169,6 @@ exports.getToursWithin = catchAsync(async (req, res, next) => {
   if (!lat || !lng) {
     next(new AppError('Please enter a valid latitude and longtude'), 400);
   }
-  console.log(distance, latlng, unit);
 
   const tours = await Tour.find({
     startLocation: { $geoWithin: { $centerSphere: [[lng, lat], radius] } },
@@ -191,7 +190,6 @@ exports.getDistances = catchAsync(async (req, res, next) => {
 
   const multiplier = unit === 'mi' ? 0.000621371 : 0.001;
 
-  console.log(unit);
   const distances = await Tour.aggregate([
     {
       $geoNear: {

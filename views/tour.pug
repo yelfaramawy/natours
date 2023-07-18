@@ -72,7 +72,6 @@ block content
 
     section.section-pictures
         each img, i in tour.images 
-            - console.log(i)
             .picture-box
                 img.picture-box__img(src=`/img/tours/${img}`, alt=`${tour.name} Tour ${i+1}`,
                     class = `picture-box__img--${i+1}`)
