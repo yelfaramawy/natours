@@ -1,0 +1,32 @@
+doctype html 
+html 
+    head 
+        block head     
+            //- meta(http-equiv="Content-Security-Policy" content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;")
+            //- meta(http-equiv="Content-Security-Policy" content="connect-src 'self' ws://localhost:63249/ https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js https://api.mapbox.com")
+            //- meta(http-equiv="Content-Security-Policy" content="connect-src 'self' https://cdnjs.cloudflare.com  https://api.mapbox.com )
+            meta(charset='UTF-8')
+            meta(name='viewport' content='width=device-width, initial-scale=1.0')
+            link(rel='stylesheet', href='/css/style.css')
+            link(rel='shortcut icon', type='image/png' href='/img/favicon.png')
+            //- link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=latp:300,300i,700')
+            link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:300,300i,700&display=swap')
+            title Natours | #{title}
+
+    body 
+        // HEADER
+        include _header
+
+        // CONTENT
+        block content 
+            h1 TEXT HERE
+
+        // FOOTER
+        include _footer
+
+
+        //- script(src='/js/mapbox.js')
+        //- script(src='/js/login.js')
+        script(src='https://js.stripe.com/v3/')
+        script(src='/js/bundle.js')
+        //- script(src='/js/bundle.js.map')
