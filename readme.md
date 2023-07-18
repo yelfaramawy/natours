@@ -9,7 +9,7 @@ To get a local copy of the project up and running, follow these steps:
 1. Clone the repository: `git clone <repository-url>`
 2. Install the dependencies: `npm install`
 3. Set up the environment variables: Create a `.env` file and provide the required environment variables (e.g., database connection string, JWT secret, etc.)
-4. Start the development server: `npm run dev`
+4. Start the development server: `npm start`
 
 ## ✨ Features
 
