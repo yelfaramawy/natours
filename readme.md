@@ -2,6 +2,15 @@
 
 This is the backend API for the Natours project, a tour booking website. It provides the server-side logic and functionality for handling tours, user authentication, bookings, and more.
 
+## 🚀 Getting Started
+
+To get a local copy of the project up and running, follow these steps:
+
+1. Clone the repository: `git clone <repository-url>`
+2. Install the dependencies: `npm install`
+3. Set up the environment variables: Create a `.env` file and provide the required environment variables (e.g., database connection string, JWT secret, etc.)
+4. Start the development server: `npm start`
+
 ## ✨ Features
 
 - User authentication and authorization using JWT (JSON Web Tokens)
@@ -21,16 +30,7 @@ This is the backend API for the Natours project, a tour booking website. It prov
 - JWT (JSON Web Tokens)
 - Pug
 - Stripe (for payment processing)
-- Deployment Tools (e.g., Heroku, AWS, etc.)
-
-## 🚀 Getting Started
-
-To get a local copy of the project up and running, follow these steps:
-
-1. Clone the repository: `git clone <repository-url>`
-2. Install the dependencies: `npm install`
-3. Set up the environment variables: Create a `.env` file and provide the required environment variables (e.g., database connection string, JWT secret, etc.)
-4. Start the development server: `npm run dev`
+- Deployment Tools
 
 ## 💻 Deployment
 
