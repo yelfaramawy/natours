@@ -26,7 +26,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Set security HTTP header
-// app.use(helmet());
+app.use(helmet());
 
 // Development logging
 if (process.env.NODE_ENV === 'development') {
@@ -50,7 +50,7 @@ app.use(cookieParser());
 app.use(mongoSanitize());
 
 // Protect against xss
-// app.use(xss());
+app.use(xss());
 
 // Prevent parameter pollution
 app.use(
@@ -80,11 +80,6 @@ app.use('/api/v1/reviews', reviewRouter);
 app.use('/api/v1/bookings', bookingRouter);
 
 app.all('*', (req, res, next) => {
-  // to detect that there is an invalid URL
-  // const err = new Error(`Can't find ${req.originalUrl}`);
-  // err.statusCode = 404;
-  // err.status = 'fail';
-
   next(new AppError(`Can't find ${req.originalUrl}`, 404));
 });
 

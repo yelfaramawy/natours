@@ -60,15 +60,3 @@ export const signup = async (name, email, password, confirmPassword) => {
     showAlert('error', err.response.data.message);
   }
 };
-
-// document.querySelector('form').addEventListener('submit', (e) => {
-//     const res = axios({
-//         method: 'POST',
-//         url: 'api/v1/users/login'
-//     })
-//   e.preventDefault();
-//   const email = document.getElementById('email').value;
-//   const password = document.getElementById('password').value;
-
-//   console.log(email, password);
-// });
