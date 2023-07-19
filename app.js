@@ -27,7 +27,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Set security HTTP header
-app.use(helmet());
+// app.use(helmet());
 
 // Development logging
 if (process.env.NODE_ENV === 'development') {
@@ -51,7 +51,7 @@ app.use(cookieParser());
 app.use(mongoSanitize());
 
 // Protect against xss
-app.use(xss());
+// app.use(xss());
 
 // Prevent parameter pollution
 app.use(
