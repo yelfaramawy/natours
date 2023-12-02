@@ -33,8 +33,8 @@ To get a local copy of the project up and running, follow these steps:
 - Deployment Tools
 
 ## 💻 Deployment
-
-This project can be deployed using various platforms and services, such as Heroku, AWS, or your preferred hosting provider. Please refer to the documentation of your chosen deployment platform for specific instructions on how to deploy a Node.js application.
+(Use a laptop or PC for an optimized browsing experience) 
+💻 Check out Natours: https://lnkd.in/dJXPGbB6
 
 ## © Credits
 
