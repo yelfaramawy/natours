@@ -33,8 +33,9 @@ To get a local copy of the project up and running, follow these steps:
 - Deployment Tools
 
 ## 💻 Deployment
+💻 Check out Natours: [Natours | All Tours](https://natours-fzy4.onrender.com/)
 (Use a laptop or PC for an optimized browsing experience) 
-💻 Check out Natours: https://lnkd.in/dJXPGbB6
+
 
 ## © Credits
 
